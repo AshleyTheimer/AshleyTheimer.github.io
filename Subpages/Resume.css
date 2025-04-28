@@ -51,7 +51,7 @@ li li {
 h3 {
     margin: 0;
     padding-bottom: 10px;
-    line-height: 1.2; /* Optional: tweak this if the spacing still feels tight */
+    line-height: 1.2;
 }
 .job1, .job2, .job3 {
     padding-top: 0px;
