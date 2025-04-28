@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Ashley Theimer">
+        <meta name="description" content="Personal Website of Ashley Theimer">
+        <title>Ashley Theimer: Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../PW.css">
+        <link rel="stylesheet" href="../PWPhone.css" media="(max-width: 1052px)">
+        <link rel="icon" type="image/icon" href="../Images/Logos/logoNew.png">
+        <style>
+            .profile {grid-area: profile;}
+            .contact {grid-area: contact;}
+            .Intro {
+                display: grid;
+                grid-template-columns: 35% auto;
+                grid-template-areas: 
+                    "profile contact";
+                column-gap: 25px;
+                margin-bottom: 20px;
+            }
+            
+            @media (max-width: 767px) {
+                .Intro {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    grid-row-gap: 20px;
+                }
+
+                .profile {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .profile img {
+                    width: 70%;
+                    max-width: 250px;
+                    height: auto;
+                    border-radius: 50%;
+                    margin-bottom: 15px;
+                }
+
+                .AboutMe h1 {
+                    font-size: 1.8em;
+                    margin-bottom: 10px;
+                }
+
+                .contact h2 {
+                    font-size: 1.4em;
+                    margin-bottom: 10px;
+                }
+
+                .contact p, .contact a {
+                    font-size: 1em;
+                    text-align: center;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="nav">
+                <a href="../index.html">
+                    <img src="../Images/Logos/logoNew.png" alt="AT logo">
+                </a>
+                <a href="../index.html"><h1>Ashley Theimer</h1></a>
+                <div class="buttonsOption">
+                    <a href="../index.html" class="buttons">About Me</a>
+                    <a href="Projects.html" class="buttons">Projects</a>
+                    <a href="Resume.html" class="buttons">Resume</a>
+                    <a href="Hobbies.html" class="buttons">Hobbies</a>
+                    <a href="Interests.html" class="buttons">Blog</a>
+                    <a href="ContactMe.html" class="buttons" id="current">Contact Me!</a>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">More &#x25BC;</button>
+                  <div class="dropdown-content">
+                        <a href="../index.html">About Me</a>
+                        <a href="Projects.html">Projects</a>
+                        <a href="Resume.html">Resume</a>
+                        <a href="Hobbies.html">Hobbies</a>
+                        <a href="Interests.html">Blog</a>
+                        <a href="ContactMe.html" id="current1">Contact Me!</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <main>
+                <p class="top">:)</p>
+                <section class="Intro">
+                    <section class="profile">
+                        <img src="../Images/beach.png" alt="Image of Ashley Theimer">    
+                    </section>
+                    <div class="contact">
+                        <h2>Contact Me!</h2>
+                        <p><strong>Phone</strong>: (443) 518-8199</p>
+                        <p><strong>Email</strong>: <a href="mailto:ashley@thetheimers.com">ashley@thetheimers.com</a></p>
+                        <section class="ContIcons">
+                            <a href="https://github.com/AshleyTheimer"><img src="../Images/Logos/githubIcon.svg" alt="GitHub Logo" class="ContactIcons"></a>
+                            <a href="https://www.linkedin.com/in/ashley-theimer-1a0873344/"><img src="../Images/Logos/linkedInLogo.png" alt="LinkedIn Logo"  class="ContactIcons"></a>
+                            <a href="https://washjeff.joinhandshake.com/profiles/5r7j5b"><img src="../Images/Logos/handshakeIcon.png" alt="Handshake Logo"  class="ContactIcons"></a>
+                        </section>
+                        <a href="../ATResume.pdf" download class="resumeDownload">Download my Resume (PDF)</a>
+                    </div>
+                    
+                </section>
+            </main>
+        </div>
+        <footer>
+            <a href="../index.html"><h1>Ashley Theimer</h1></a>
+            <a href="#top" class="buttons">Back To Top</a> 
+        </footer>
+    </body>
+</html>
