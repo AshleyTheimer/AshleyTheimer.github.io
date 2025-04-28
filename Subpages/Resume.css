@@ -1,0 +1,99 @@
+.job1 {grid-area: job1;}
+.job2 {grid-area: job2;}
+.job3 {grid-area: job3;}
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "job1 job2 job3";
+    column-gap: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+.list1 {grid-area: list1;}
+.list2 {grid-area: list2;}
+.list3 {grid-area: list3;}
+.lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "list1 list2 list3";
+    column-gap: 25px;
+    grid-row-gap: 25px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+p {
+    margin-bottom: 0px;
+}
+p + .lists {
+    margin-top: 0;
+}
+
+li img {
+    height: 1.5em;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li {
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+
+li li {
+    padding-top: 10px;
+}
+
+h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    line-height: 1.2; /* Optional: tweak this if the spacing still feels tight */
+}
+.job1, .job2, .job3 {
+    padding-top: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+main div {
+    margin-bottom: 25px;
+}
+
+.education{grid-area: education;}
+.achievements{grid-area: achievements}
+.sideBySide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "education achievements";
+    column-gap: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.educationContent {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+}
+.educationContent img {
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.image-container img{
+    height: 100px;
+    object-fit: contain;
+}

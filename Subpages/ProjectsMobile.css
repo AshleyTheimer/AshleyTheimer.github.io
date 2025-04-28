@@ -1,0 +1,111 @@
+.otherImgs section.imgSection {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    text-align: center;
+    font-size: 75%;
+}
+
+.imgSection img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.otherImgs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: auto; /* Push it to the bottom */
+    grid-row-gap: 10px;
+}
+
+.mainImg {
+    grid-area: "mainImg";
+    width: 100%;
+}
+.secondImg {
+    grid-area: "secondImg";
+    min-height: 50px;
+    max-height: 200px;
+    max-width: 100%;
+    display: flex;
+    align-content: flex-start;
+}
+
+.project1, .project2, .project3 {
+    display: flex;                /* Use Flexbox to align elements vertically */
+    flex-direction: column;       /* Stack content vertically */
+    align-items: center;          /* Center the content horizontally */
+    padding: 10px;
+  }
+
+/*
+  .projectDesc {
+    order: -1;                     Move the project description/title above the image 
+
+  }
+*/
+
+  .mainImgSection {
+    order: 1;                     /* Keep the image below the title/description */
+    width: 100%;                  /* Ensure the image takes up the full width */
+  }
+
+section.projectDesc {
+    grid-area: "desc";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: -1;
+}
+.project1, .project2, .project3 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "mainImg"
+      "desc";
+    padding: 10px;
+  }
+
+.project1{grid-area: "project1"}
+.project2{grid-area: "project2"}
+.project3{grid-area: "project3"}
+
+
+main section.overview {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "project1",
+                        "project2",
+                        "project3";
+    grid-row-gap: 15px;
+}
+h1.sect2 {
+    margin-top: 50px;
+}
+h2 img {
+    height: 1em;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/*Where I got the translation transition from: https://www.w3schools.com/css/css3_transitions.asp*/
+.otherImgs .imgSection img, img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Where I got the translation from: https://www.w3schools.com/css/css3_2dtransforms.asp*/
+.otherImgs .imgSection:hover img, .mainImgSection:hover img.mainImg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-height: 80vh;
+    max-width: 80vh;
+    transform: translate(-50%, -50%) scale(1.25);
+    z-index: 25;
+}
+
+li {
+    font-size: 1.25em;
+}
