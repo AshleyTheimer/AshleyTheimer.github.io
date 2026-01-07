@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,6 +14,7 @@
         <!-- Styles for mobile (below 768px) -->
         <link rel="stylesheet" href="ProjectsMobile.css" media="(max-width: 767px)">
         <link rel="icon" type="image/icon" href="../Images/Logos/logoNew.png">
+        
     </head>
     <body>
         <nav>
@@ -44,6 +46,17 @@
         </nav>
         <p class="top">:)</p>
         <main>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <!-- image shown in modal -->
+                    <div style="max-width:100%; max-height:500px; display: flex; justify-content: center; background-color: transparent">
+                        <img id="modalImg" style="max-width:100%; max-height:500px; display: flex; justify-content: center;" alt="">
+                    </div>
+                </div>
+            </div>
+
             <section class="overview">
                 <div class="project1">
                     <section class="projectDesc">
@@ -64,17 +77,17 @@
                                 <p class="caption">Activity flow diagram for the sim</p>
                             </section>
                             <section class="imgSection">
-                                <img src="../Images/ProjectImgs/MKVVTom.PNG" alt="Verification & Validation graph for Tomorrowland">
+                                <img src="../Images/ProjectImgs/MKVVTom.PNG" alt="Verification & Validation graph for Tomorrowland" class="mainImg">
                                 <p class="caption">Verification &amp; Validation graph for Tomorrowland</p>
                             </section>
                             <section class="imgSection">
-                                <img src="../Images/ProjectImgs/TPDataFlow.PNG" alt="Data flow diagram for the sim">
+                                <img src="../Images/ProjectImgs/TPDataFlow.PNG" alt="Data flow diagram for the sim" class="mainImg">
                                 <p class="caption">Data flow diagram for the sim</p>
                             </section>
                         </section>
                     </section>
                     <section class="mainImgSection">
-                        <img src="../Images/ProjectImgs/MKFantasyLandGraph.PNG" alt="Wait times for Fantasyland graph" class="mainImg">
+                        <img id="imgModal" src="../Images/ProjectImgs/MKFantasyLandGraph.PNG" alt="Wait times for Fantasyland graph" class="mainImg">
                         <img src="../Images/ProjectImgs/MKFantasylandKey.PNG" alt="Key for Fantasyland graph rides" class="secondImg">
                     </section>
                 </div>
@@ -103,15 +116,15 @@
                         </section>
                         <section class="otherImgs">
                             <section class="imgSection">
-                                <img src="../Images/ProjectImgs/ObjCode.PNG" alt="Object code">
+                                <img src="../Images/ProjectImgs/ObjCode.PNG" alt="Object code" class="mainImg">
                                 <p class="caption">Object code</p>
                             </section>
                             <section class="imgSection">
-                                <img src="../Images/ProjectImgs/FireIncidentType.PNG" alt="GUI for a partiular fire incident">
+                                <img src="../Images/ProjectImgs/FireIncidentType.PNG" alt="GUI for a partiular fire incident" class="mainImg">
                                 <p class="caption">GUI for a partiular fire incident</p>
                             </section>
                             <section class="imgSection">
-                                <img src="../Images/ProjectImgs/EventHandlers.PNG" alt="GUI for a partiular fire incident">
+                                <img src="../Images/ProjectImgs/EventHandlers.PNG" alt="GUI for a partiular fire incident" class="mainImg">
                                 <p class="caption">Event Handlers For GUI</p>
                             </section>
                         </section>
@@ -132,23 +145,64 @@
                         </section>
                         <section class="otherImgs">
                             <section class="imgSection">
-                                <img src="../Images/ProjectImgs/DisneyQueries.PNG" alt="Queries for the database">
+                                <img src="../Images/ProjectImgs/DisneyQueries.PNG" alt="Queries for the database" class="mainImg">
                                 <p class="caption">Queries for the database</p>
                             </section>
                             <section class="imgSection">
-                                <img src="../Images/ProjectImgs/DisneyUseCase.PNG" alt="Use Case Diagram">
+                                <img src="../Images/ProjectImgs/DisneyUseCase.PNG" alt="Use Case Diagram" class="mainImg">
                                 <p class="caption">Use Case Diagram</p>
                             </section>
                             <section class="imgSection">
-                                <img src="../Images/ProjectImgs/DisneySQL.PNG" alt="SQL code for project">
+                                <img src="../Images/ProjectImgs/DisneySQL.PNG" alt="SQL code for project" class="mainImg">
                                 <p class="caption">SQL code for project</p>
                             </section>
                         </section>
                     </section>
-                    <img src="../Images/ProjectImgs/DisneyERD.PNG" alt="Wait times for Fantasyland graph" class="mainImg">
+                    <a href="#" class="popupLink" data-popup-target="office">
+                        <figure class="cover">
+                            <img src="../Images/ProjectImgs/DisneyERD.PNG" alt="Wait times for Fantasyland graph" class="mainImg">
+                        </figure>
+                    </a>
+                    <div class="popup" id="office">
+                        <div class="popup-content">
+                            <img src="../Images/ProjectImgs/DisneyERD.PNG" alt="Wait times for Fantasyland graph" class="mainImg">
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+        <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("myModal");
+  const closeBtn = document.querySelector(".close");
+  const modalImg = document.getElementById("modalImg");
+
+  // click image -> open modal and copy src
+  // select ALL images with class mainImg
+  const images = document.querySelectorAll(".mainImg");
+
+  images.forEach(img => {
+    img.addEventListener("click", function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+    });
+  });
+
+  // close with X
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // close by clicking outside modal-content
+  modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+</script>
+
         <footer>
             <a href="../index.html"><h1>Ashley Theimer</h1></a>
             <a href="#top" class="buttons">Back To Top</a> 
