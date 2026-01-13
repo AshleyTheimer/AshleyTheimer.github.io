@@ -85,7 +85,8 @@ nav right {
 }
 
 nav div.nav a img{
-    margin-top: 7px;
+    margin-top: 1px;
+    margin-bottom: 0;
 }
 
 div.nav h1{
