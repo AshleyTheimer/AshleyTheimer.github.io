@@ -51,14 +51,44 @@
                     <span class="close">&times;</span>
 
                     <!-- image shown in modal -->
-                    <div style="max-width:100%; max-height:500px; display: flex; justify-content: center; background-color: transparent">
-                        <img id="modalImg" style="max-width:100%; max-height:500px; display: flex; justify-content: center;" alt="">
+                    <div style="max-width:100%; max-height:73vh; display: flex; justify-content: center; background-color: transparent; padding: 5px;">
+                        <img id="modalImg" style="max-width:100%; max-height:85vh; display: flex; justify-content: center; object-fit: contain;" alt="">
                     </div>
                 </div>
             </div>
 
             <section class="overview">
                 <div class="project1">
+                    <section class="projectDesc">
+                        <section class="details">
+                            <h2>Elementary School Classroom Library Database and Website<img src="../Images/Icons/SQL.png" alt="SQL Icon"><img src="../Images/Icons/HTML.png" alt="HTML Icon"></h2>
+                            <ul>
+                                <li><strong>Designed</strong> a third-grade-friendly website connected to a relational database to manage a classroom library.</li>
+                                <li><strong>Tracked</strong> check-ins/check-outs, student activity, and inventory to prevent duplicate book additions.</li>
+                                <li><strong>Built</strong> a relational database with <strong>8+ tables</strong> and <strong>1,000+ records</strong>, including individual checkout histories on Supabase.</li>
+                                <li><strong>Developed</strong> separate teacher and student UIs with <strong>secure login</strong> and role-based access.</li>
+                                <li><strong>Implemented</strong> <strong>15+ backend functions</strong> to maintain data consistency and enable safe inserts/updates.</li>
+                                <li><strong>Collaborated</strong> with a teacher client to meet specific design and functionality requirements.</li>
+                            </ul>
+                        </section>
+                        <section class="otherImgs">
+                            <section class="imgSection">
+                                <img src="../Images/ProjectImgs/AlyssasLibraryERD.png" alt="ERD for the database" class="mainImg">
+                                <p class="caption">ERD for the database</p>
+                            </section>
+                            <section class="imgSection">
+                                <img src="../Images/ProjectImgs/AlyssasLibraryEnterBook.png" alt="Teacher book entry on website" class="mainImg">
+                                <p class="caption">Teacher book entry on website</p>
+                            </section>
+                            <section class="imgSection">
+                                <img src="../Images/ProjectImgs/AlyssasLibraryCheckout.png" alt="Book checkout" class="mainImg">
+                                <p class="caption">Book checkout on website</p>
+                            </section>
+                        </section>
+                    </section>
+                    <img id="imgModal" src="../Images/ProjectImgs/AlyssasLibraryIndex.png" alt="Alyssa's Library main page" class="mainImg">
+                </div>
+                <div class="project2">
                     <section class="projectDesc">
                         <section class="details">
                             <h2>Simulation of Magic Kingdom Park <img src="../Images/Icons/Python.png" alt="Python Icon" class="python-icon"></h2>
@@ -91,7 +121,7 @@
                         <img src="../Images/ProjectImgs/MKFantasylandKey.PNG" alt="Key for Fantasyland graph rides" class="secondImg">
                     </section>
                 </div>
-                <div class="project2">
+                <div class="project3">
                     <section class="projectDesc">
                         <section class="details">
                             <h2>UI of Fires in Pittsburgh <img src="../Images/Icons/Java.png" alt="Java Icon"></h2>
@@ -131,7 +161,7 @@
                     </section>
                     <img src="../Images/ProjectImgs/FireIncidentClick.PNG" alt="Map of fire incidents in Pittsburgh, PA" class="mainImg">
                 </div>
-                <div class="project3">
+                <div class="project4">
                     <section class="projectDesc">
                         <section class="details">
                             <h2>Database of Disney Parks <img src="../Images/Icons/SQL.png" alt="SQL Icon"></h2>
@@ -163,11 +193,6 @@
                             <img src="../Images/ProjectImgs/DisneyERD.PNG" alt="Wait times for Fantasyland graph" class="mainImg">
                         </figure>
                     </a>
-                    <div class="popup" id="office">
-                        <div class="popup-content">
-                            <img src="../Images/ProjectImgs/DisneyERD.PNG" alt="Wait times for Fantasyland graph" class="mainImg">
-                        </div>
-                    </div>
                 </div>
             </section>
         </main>
