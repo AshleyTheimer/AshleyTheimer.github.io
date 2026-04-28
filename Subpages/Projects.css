@@ -53,7 +53,7 @@ section.projectDesc {
     flex-direction: column;
     justify-content: space-between;
 }
-.project1, .project2, .project3, .project4 {
+.project1, .project2, .project3, .project4, .project5 {
     background-color: white;
     border-radius: 25px;
     display: grid;
@@ -67,16 +67,18 @@ section.projectDesc {
 .project1{grid-area: "project1"}
 .project2{grid-area: "project2"}
 .project3{grid-area: "project3"}
-.project3{grid-area: "project4"}
+.project4{grid-area: "project4"}
+.project5{grid-area: "project5"}
 
 
 main section.overview {
     display: grid;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas: "project1",
                         "project2",
                         "project3",
-                        "project4";
+                        "project4",
+                        "project5";
     grid-row-gap: 15px;
 }
 h1.sect2 {
