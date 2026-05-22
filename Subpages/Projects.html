@@ -56,9 +56,21 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="jumpTo" style="margin-top: 20px">
+                <h2>Jump to Featured Projects</h2>
+                <div class="button-grid">
+                    <a href="#project1" class="jumpButtons">Jail Meal Planning System</a>
+                    <a href="#project2" class="jumpButtons">Elementary School Classroom Library Database and Website</a>
+                    <a href="#jupyterProject" class="jumpButtons">Jupyter Notebook Project</a>
+                    <a href="#project3" class="jumpButtons">Simulation of Magic Kingdom Park</a>
+                    <a href="#project4" class="jumpButtons">UI of Fires in Pittsburgh</a>
+                    <a href="#project5" class="jumpButtons">Database of Disney Parks</a>
+                </div>
+            </div>
 
             <section class="overview">
-                <div class="project1"> 
+                <div id="project1"> 
                     <section class="projectDesc">
                         <section class="details">
                             <h2>Jail Meal Planning System
@@ -92,10 +104,14 @@
                             </section>
                         </section>
                     </section>
-
-                    <img id="imgModal" src="../Images/ProjectImgs/capstone/Jail_Menus_Index.png" alt="Jail Meal Planning System home page" class="mainImg">
+                    <section class="mainImgSection">
+                        <img id="imgModal" src="../Images/ProjectImgs/capstone/Jail_Menus_Index.png" alt="Jail Meal Planning System home page" class="mainImg">
+                        <div class="backTop">
+                            <a href="#top" class="btnTop">Back to Top</a>
+                        </div>
+                    </section>
                 </div>
-                <div class="project2">
+                <div id="project2">
                     <section class="projectDesc">
                         <section class="details">
                             <h2>Elementary School Classroom Library Database and Website<img src="../Images/Icons/SQL.png" alt="SQL Icon"><img src="../Images/Icons/HTML.png" alt="HTML Icon"></h2>
@@ -123,13 +139,23 @@
                             </section>
                         </section>
                     </section>
-                    <img id="imgModal" src="../Images/ProjectImgs/AlyssasLibraryIndex.png" alt="Alyssa's Library main page" class="mainImg">
+                    <section class="mainImgSection">
+                        <img id="imgModal" src="../Images/ProjectImgs/AlyssasLibraryIndex.png" alt="Alyssa's Library main page" class="mainImg">
+                        <div class="backTop">
+                            <a href="#top" class="btnTop">Back to Top</a>
+                        </div>
+                    </section>
                 </div>
-                <div class="jupyterProject">
+                <div id="jupyterProject">
                     <h2>Jupyter Notebook Project <img src="../Images/Icons/Python.png" alt="Python Icon" class="python-icon"></h2>
                     <iframe src="VolcanoesFP.html" width="100%" height="600" title="Jupyter Project"></iframe>
+                    <div style="display: flex; justify-content: flex-end">
+                        <div style="max-width: 200px; width: 100%;">
+                            <a href="#top" class="btnTop" style="margin-bottom: 0; margin-right: 0; margin-top: 0; width: 100%;">Back to Top</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project3">
+                <div id="project3">
                     <section class="projectDesc">
                         <section class="details">
                             <h2>Simulation of Magic Kingdom Park <img src="../Images/Icons/Python.png" alt="Python Icon" class="python-icon"></h2>
@@ -160,9 +186,13 @@
                     <section class="mainImgSection">
                         <img id="imgModal" src="../Images/ProjectImgs/MKFantasyLandGraph.PNG" alt="Wait times for Fantasyland graph" class="mainImg">
                         <img src="../Images/ProjectImgs/MKFantasylandKey.PNG" alt="Key for Fantasyland graph rides" class="secondImg">
+                        <div class="backTop">
+                            <a href="#top" class="btnTop">Back to Top</a>
+                        </div>
+                        
                     </section>
                 </div>
-                <div class="project4">
+                <div id="project4">
                     <section class="projectDesc">
                         <section class="details">
                             <h2>UI of Fires in Pittsburgh <img src="../Images/Icons/Java.png" alt="Java Icon"></h2>
@@ -200,9 +230,14 @@
                             </section>
                         </section>
                     </section>
-                    <img src="../Images/ProjectImgs/FireIncidentClick.PNG" alt="Map of fire incidents in Pittsburgh, PA" class="mainImg">
+                    <section class="mainImgSection">
+                        <img src="../Images/ProjectImgs/FireIncidentClick.PNG" alt="Map of fire incidents in Pittsburgh, PA" class="mainImg">
+                        <div class="backTop">
+                            <a href="#top" class="btnTop">Back to Top</a>
+                        </div>
+                    </section>
                 </div>
-                <div class="project5">
+                <div id="project5">
                     <section class="projectDesc">
                         <section class="details">
                             <h2>Database of Disney Parks <img src="../Images/Icons/SQL.png" alt="SQL Icon"></h2>

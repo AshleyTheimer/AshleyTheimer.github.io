@@ -119,7 +119,7 @@ div.nav, footer div.label{
     column-gap: 25px;
 }
 
-a.buttons, a.resumeDownload, a.downloadBtn {
+a.buttons, a.resumeDownload, a.downloadBtn, a.jumpButtons, a.btnTop {
     border-radius: 25px;
     background-color: white;
     width: auto;
@@ -135,14 +135,16 @@ a.buttons, a.resumeDownload, a.downloadBtn {
     font-size: 110%;
 }
 
-#current, #current1 {
+#current, #current1, a.jumpButtons {
     background-color: #b7f4da;
 }
 
-div.nav a.buttons:hover, #current:hover, #current1:hover, div.nav a.buttons:focus, #current:focus, #current1:focus, a.resumeDownload:hover, a.resumeDownload:focus {
+div.nav a.buttons:hover, a.jumpButtons:hover, #current:hover, #current1:hover, 
+div.nav a.buttons:focus, #current:focus, #current1:focus, a.resumeDownload:hover, 
+a.resumeDownload:focus, a.btnTop:hover, a.btnTop:focus {
     background-color: #f2d9fb;
 }
-a.resumeDownload, a.downloadBtn {
+a.resumeDownload, a.downloadBtn, a.btnTop {
     border-radius: 15px;
     background-color: #b7f4da;
     text-align: center;
