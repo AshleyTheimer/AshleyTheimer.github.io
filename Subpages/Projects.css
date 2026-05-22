@@ -54,9 +54,9 @@ section.projectDesc {
     justify-content: space-between;
 }
 
-#project1, #project2, #project3, #project4, #project5, #jupyterProject .jumpTo {
+.jumpTo, #project1, #project2, #project3, #project4, #project5, #jupyterProject, .jumpTo {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
     overflow: hidden;
     padding: 15px;
     column-gap: 15px;
